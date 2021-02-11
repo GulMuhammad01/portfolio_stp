@@ -1,0 +1,676 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  letter-spacing: 1px;
+}
+/*navbar-start here*/
+.home-sec {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/moon.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.container-flex {
+  display: flex;
+  justify-content: space-around;
+  /*background-color: pink;*/
+  height: 80px;
+  align-items: center;
+}
+.logo {
+  width: 25%;
+  /*background-color: aqua;*/
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-weight: 600px;
+  font-size: 26px;
+  color: white;
+}
+.nav-links {
+  /*background-color: blue;*/
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-weight: 300px;
+  font-size: 22px;
+}
+.nav-links ul {
+  display: flex;
+}
+.nav-links ul li {
+  list-style-type: none;
+  padding: 0 10px;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+.nav-links ul li a:hover {
+  color: aqua;
+  background-color: transparent;
+}
+
+/*navbar-end*/
+/*mainsec-start Here*/
+
+#main-sec .container-main {
+  display: flex;
+  height: auto;
+}
+#main-sec .container-main .row {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+#main-sec .container-main .row .content-box {
+  text-align: center;
+  width: 40%;
+}
+#main-sec .container-main .row .content-box h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: white;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+#main-sec .container-main .row .content-box h2 {
+  text-transform: capitalize;
+  font-size: 42px;
+  letter-spacing: 3px;
+  margin: 0;
+  color: white;
+}
+#main-sec .container-main .row .content-box p {
+  letter-spacing: 1px;
+  padding: 20px 0px;
+  color: white;
+}
+
+/* Helper Classes start here*/
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 25px;
+  border: 1px solid;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.btn:focus {
+  outline: none;
+}
+.btn-primary {
+  background-color: transparent;
+}
+.btn-primary:hover {
+  background-color: pink;
+  color: red;
+  border-color: pink;
+}
+.btn-primary:focus {
+  background-color: blue;
+  color: #fff;
+  border-color: blue;
+}
+.btn-secondary {
+  background-color: pink;
+  color: red;
+  border-color: pink;
+}
+.btn-secondary:hover {
+  background-color: transparent;
+  border-color: #333;
+}
+.btn-secondary:focus {
+  background-color: blue;
+  border-color: blue;
+  color: #fff;
+}
+/* Helper Classes of about-me*/
+.container {
+  margin: 0 auto;
+  width: 85%;
+}
+.row {
+  display: flex;
+}
+.col {
+  display: inherit;
+  flex: 1;
+  justify-content: center;
+}
+.sec-sv {
+  padding: 100px 0px;
+}
+/* Side Box */
+.side-box {
+  position: fixed;
+  top: 40%;
+  left: 0%;
+  width: 30px;
+  height: 30px;
+  background-color: silver;
+  color: black;
+  font-size: 24px;
+}
+
+/* Helper Classes end here*/
+
+/* About Section Start here */
+#about-me .aboutme-content .social-icons ul {
+  padding: 20px 0px;
+  list-style-type: none;
+  display: flex;
+}
+#about-me .aboutme-content .social-icons ul li {
+  width: 40px;
+  height: 40px;
+  /*background-color: aqua;*/
+  border-radius: 50%;
+  border: 1px solid aqua;
+  line-height: 37px;
+  text-align: center;
+  margin-right: 15px;
+  font-size: 22px;
+}
+#about-me .aboutme-content h4 {
+  padding: 20px 0px;
+  font-size: 18px;
+}
+#about-me .aboutme-content h2 {
+  padding: 20px 0px;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 900px;
+}
+#about-me .aboutme-content span {
+  color: red;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+#about-me .aboutme-content p {
+  padding: 10px 0px;
+}
+#about-me .aboutme-content i {
+  color: red;
+}
+/*about-me sec end here*/
+
+/*our services sec start here*/
+#our-services {
+  background-color: silver;
+}
+#our-services .services-content {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+#our-services .services-content h2 {
+  margin: 12px 0px;
+  text-transform: capitalize;
+  font-size: 28px;
+}
+#our-services .services-box-content {
+  border: 1px solid black;
+  text-align: center;
+  /*width: 30%;*/
+  padding: 30px;
+  margin: 15px;
+}
+#our-services .services-box-content .line {
+  border-width: 3px;
+  border-style: solid;
+  width: 20%;
+  margin: 0 auto;
+  color: red;
+  margin-bottom: 10px;
+}
+#our-services .services-box-content h3 {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 10px 0px;
+}
+#our-services .services-box-content .icon {
+  color: rgb(233, 69, 69);
+  font-size: 60px;
+}
+/*freelancer section starts from here*/
+
+#freelance-available .content-dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+#freelance-available .content-dev button {
+  margin-top: 20px;
+  font-size: 1rem;
+  border-radius: 0px;
+  background-color: red;
+  color: white;
+}
+/*freelancer section starts from here*/
+
+/*havor starts here*/
+
+#hover-box .box2 {
+  background: linear-gradient(transparent, #ff0043, #ff0043);
+  font-family: "Poppins", sans-serif;
+
+  overflow: hidden;
+  position: relative;
+}
+#hover-box .box2:before {
+  content: "";
+  background: #fff;
+  height: 30px;
+  width: 0;
+  border-radius: 0 50px 50px 0;
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s ease 0s;
+}
+#hover-box .box2:hover:before {
+  width: calc(100% - 85px);
+  opacity: 0.9;
+}
+#hover-box .box2 img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease 0s;
+}
+#hover-box .box2:hover img {
+  opacity: 0.6;
+}
+#hover-box .box2 .box-content {
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1;
+  transition: all 0.4s ease 0.2s;
+}
+#hover-box .box2:hover .box-content {
+  opacity: 1;
+  bottom: 25px;
+}
+#hover-box .box2 .title {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+  margin: 0 0 7px;
+}
+#hover-box .box2 .post {
+  color: #333;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+}
+#hover-box .box2 .icon {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  transition: all 0.3s ease 0.3s;
+}
+#hover-box .box2:hover .icon {
+  opacity: 1;
+  bottom: 22px;
+}
+#hover-box .box2 .icon li {
+  margin: 0 3px;
+  display: inline-block;
+}
+#hover-box .box2 .icon li a {
+  color: #333;
+  background-color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 27px;
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+#hover-box .box2 .icon li a:hover {
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.25);
+}
+/*havor section ends here*/
+
+/*client section starts here*/
+#our-client {
+  padding-top: 2rem;
+  background-color: silver;
+  /*display: inline;*/
+  padding-bottom: 2rem;
+}
+.flex-center {
+  align-items: center;
+}
+.client-content {
+  flex: 1;
+}
+#our-client .client-content p {
+  text-align: center;
+  padding: 40px 50px;
+}
+#our-client .client-content h4 {
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  padding: 30px 0;
+}
+#our-client .client-content i {
+  font-size: 2.5rem;
+}
+#our-client .client-content img {
+  border-radius: 209px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  justify-content: center;
+  display: block;
+  width: 10%;
+}
+#our-client .client-content h5 {
+  text-align: center;
+}
+
+/*client section starts here*/
+
+/*our work section starts here*/
+#our-work .work-content {
+  text-align: center;
+}
+#our-work .work-content h4 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+.our-work-navbar ul {
+  list-style: none;
+  display: flex;
+  margin-top: 50px;
+}
+.our-work-navbar button {
+  padding: 12px 18px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.our-work-navbar button:hover {
+  background-color: red;
+  border-radius: 20px;
+}
+
+.box {
+  font-family: "Bellota", cursive;
+  overflow: hidden;
+  position: relative;
+}
+.box:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: all 0.6s ease 0s;
+}
+.box:hover:before {
+  border: 270px solid rgba(0, 0, 0, 0.5);
+}
+.box img {
+  width: 100%;
+  height: auto;
+  transform-origin: right center;
+  transition: all 0.4s ease-in-out;
+}
+.box:hover img {
+  transform: scale(1.2);
+}
+.box .box-content {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-50%) scale(0.1);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transition: all 0.4s ease 0.1s;
+}
+.box:hover .box-content {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+.box .title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+.box .post {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: capitalize;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.box .icon {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+.box .icon li {
+  margin: 0 0 0 2px;
+  display: inline-block;
+  vertical-align: top;
+  opacity: 0;
+  transition: 0.4s ease 0.3s;
+}
+.box:hover .icon li {
+  opacity: 1;
+}
+.box:hover .icon li:nth-child(1) {
+  transition-delay: 0.4s;
+}
+.box .icon li a {
+  color: #111;
+  background: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+.box .icon li a:hover {
+  line-height: 40px;
+  height: 40px;
+  box-shadow: 0 0 5px #999 inset;
+}
+@media only screen and (max-width: 990px) {
+  .box {
+    margin: 0 0 30px;
+  }
+}
+/*our work section ends here*/
+
+/*our blog section start here*/
+#blog-sec {
+  background-color: silver;
+}
+#blog-sec .blog-content h4 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+#blog-sec .blog-content p {
+  text-align: center;
+  padding-top: 20px;
+}
+#img-section {
+  display: flex;
+}
+.box1 {
+  margin: 18px;
+  padding: 2px 0px;
+  background-color: white;
+}
+#img-section .box1 img {
+  padding: 0;
+  margin: o;
+}
+#img-section .box1 span {
+  color: red;
+}
+#img-section .box1 h3,
+h4 {
+  padding: 0px 10px;
+  text-transform: capitalize;
+}
+#img-section .box1 p {
+  padding: 10px 10px;
+}
+#img-section .box1 button {
+  border: none;
+  background-color: white;
+  padding: 10px 10px;
+}
+/*our blog section end here*/
+
+/*contact section start here*/
+#contact-sec .contact-content h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+#contact-sec .contact-content p {
+  text-align: center;
+}
+/*contact section end here*/
+
+/* contact section2 starts here */
+.contact-box2 {
+  padding-top: 5rem;
+  text-align: center;
+}
+.contact-box2 h4 {
+  font-size: medium;
+  padding-top: 12px;
+}
+.contact-box2 i {
+  font-size: 2rem;
+  color: red;
+}
+/* contact section2 ends here */
+
+/* FORM SECTION SATARS HERE */
+#contact-sec .contant-forms {
+  padding: 15px 0 15px 14px;
+  width: 48%;
+  border: 2px solid #ebebeb;
+  margin-top: 5rem;
+  border-radius: 6px;
+  outline: none;
+}
+#contact-sec .contant-message {
+  margin-top: 2rem;
+  padding: 15px 0 4rem 4px;
+  border: 2px solid #ebebeb;
+  margin-top: 20px;
+  border-radius: 6px;
+  outline: none;
+}
+#contact-sec .btn-danger {
+  background-color: red;
+  float: right;
+  clear: right;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  text-decoration: none;
+}
+/* FORM SECTION end HERE */
+
+/* last section starts here */
+#last-sec {
+  background-color: black;
+  text-align: center;
+}
+#last-sec .row {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0px;
+}
+#last-sec .col-last a {
+  font-size: 1.5rem;
+  color: #817575;
+  padding: 15px;
+  background-color: rgb(22, 7, 7);
+  border-radius: 50px;
+  margin: 0px 5px;
+}
+#last-sec .col-last p {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin: 13px;
+}
+.btn-danger1 {
+  font-size: 1rem;
+  color: white;
+  background-color: red;
+  width: 47px;
+  height: 27px;
+  float: right;
+}
+/* last section end here */
